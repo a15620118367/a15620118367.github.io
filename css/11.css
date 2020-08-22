@@ -1,0 +1,17 @@
+div{
+	width: ;
+	height: ;
+	background: ;
+	border: ;/* 三个值,宽,类型,颜色 */
+	padding: ;/* 内容与边框的距离；数据加单位，不能设置负值*/
+	margin: ;/* 元素之间的间距 */
+	float: ;/* 同胞元素同处一行设置浮动 */
+	position: ;
+	font-family:"微软雅黑" ;/* 字体 */
+	font-size: ;/* 字号最小12*/
+	color: ;/* 字体颜色 */
+	text-align: justify;/* 两端对齐 */
+	line-height: ;/* 行高 */
+	font-weight: ;/* 加粗1-500 不加粗 600-900加粗 */
+	
+}

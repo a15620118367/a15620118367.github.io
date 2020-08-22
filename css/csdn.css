@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 410px;
+	height: 363px;
+	/*background: salmon;*/
+	margin: 0 auto;
+}
+.h17{
+	height: 17px;
+}
+.content{
+	width: 355px;
+	height: 345px;
+	border: 1px solid #d5dce5;
+	border-bottom: 0;
+	margin: 0 0 0 19px;
+	border-radius: 4px;
+}
+.line1{
+	width: 100%;
+	height: 76px;
+	/*background: sandybrown;*/
+}
+.a{
+	float: left;
+	width: 71px;
+	height: 17px;
+	/*background: aqua;*/
+	margin: 34px 0 0 31px;
+	/*字体*/
+	font-family: "微软雅黑";
+	font-size: 17px;
+	color: #4d5e73;
+	line-height: 17px;
+}
+
+.b{ 
+	float: right;
+	width: 48px;
+	height: 12px;
+	/*background: #fff;*/
+	margin: 36px 20px 0 0;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #428bca;
+	line-height: 12px;
+}
+/*285/45*/
+.fm{
+	width: 287px;
+	height: 214px;
+	/*background: skyblue;*/
+	margin: 0 0 0 30px;
+}
+.username,.psw{
+	width: 257px;
+	height: 45px;
+	padding: 0 14px;
+	border: 1px solid #d5dce5;
+	border-radius: 3px;
+	outline: none;
+}
+.psw{
+	margin-top: 20px;
+}
+.remb{
+	width: 100%;
+	height: 56px;
+	/*background: palegreen;*/
+}
+.autologin{
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 14px 0 0 0;
+}
+/*+相邻的下一个元素(同胞)*/
+.autologin+label{
+	float: left;
+	width: 78px;
+	height: 12px;
+	margin: 17px 0 0 14px;
+	/*background: sandybrown;*/
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #4d5e73;
+	line-height: 12px;
+	/*字间距*/
+	letter-spacing: 1px;
+}
+.forgetpsw{
+	float: right;
+	width: 48px;
+	height: 12px;
+	margin: 13px 0 0 2px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #4d5e73;
+	text-decoration: none;
+	line-height: 12px;
+}
+.login{
+	width: 100%;
+	height: 44px;
+	background: #c90a16;
+	border: 0;
+	border-radius: 2px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #ffffff;
+}
