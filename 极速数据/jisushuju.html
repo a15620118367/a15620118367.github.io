@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.li>li>div>img
+		</style>
+	</head>
+
+	<body>
+		<input type="text" class="in" />
+		<input type="text" class="in1" />
+		<button type="button" class="bu">历史上的今天</button>
+		<ul class="li"></ul>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$(".bu").click(function() {
+//				var d = new Date();
+//				var m = d.getMonth() + 1;
+//				var td = d.getDate();
+//				console.log(td);
+
+				$.ajax({
+					type: "get",
+					url: "https://api.jisuapi.com/todayhistory/query",
+					data: {
+						appkey: "f3a02f1842064c35",
+						month: $(".in").val(),
+						day: $(".in1").val()
+					},
+					dataType: "JSONP",
+					async: true,
+					success: function(res) {
+					
+						var re = res["result"];
+						console.log(re);
+						$(".li").empty();
+						for(var i = 0; i < re.length; i++) {
+							var list = $("<li></li>");
+							var p = $("<p></p>");
+							p.text(re[i]["title"]);
+							var s = $("<p></p>");
+							s.text(re[i]["year"] + "年" + re[i]["month"] + "月" + re[i]["day"] + "日");
+							var t = $("<div></div>");
+							t.html(re[i]["content"]);
+							list.append(p, s, t);
+							$(".li").append(list);
+						}
+					},
+					error: function(e) {
+						console.log(e);
+					}
+				});
+			})
+
+		})
+	</script>
+
+</html>
