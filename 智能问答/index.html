@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/zhinengwenda.css"/>
+	</head>
+	<body>
+		<div class="connet">
+			<div class="fi">
+				<p class="a1">智能机器人</p>
+			</div>
+			<div class="ee">
+				<input type="text" class="a2" placeholder="请输入问题" />
+				<button type="button" class="a3">查询</button>
+				<p class="aa"></p>
+			</div>
+			
+			
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".a3").click(function(){
+				$.ajax({
+					type:"get",
+					url:"https://api.jisuapi.com/iqa/query",
+					async:true,
+					data:{
+						appkey:"f3a02f1842064c35",
+						question:$(".a2").val()
+					},
+					dataType:"JSONP",
+					success:function(res){
+						console.log(res);
+						$(".aa").text(res["result"]["content"]);
+					},
+					error:function(){}
+				});
+			})
+		})
+	</script>
+</html>

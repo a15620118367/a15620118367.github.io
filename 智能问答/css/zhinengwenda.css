@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.connet{
+	width: 600px;
+	height: 540px;
+	/*background-color: blue;*/
+	margin: 100px auto;
+	border-radius:10px;
+	border: solid 1px;
+	
+}
+.fi{
+	width: 540px;
+	height: 70px;
+	/*background-color: aqua;*/
+	padding: 30px;
+}
+.a1{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	text-align: center;
+}
+.ee{
+	width: 600px;
+	height: 410px;
+	/*background-color: red;*/
+}
+.a2{
+	width: 400px;
+	height: 40px;
+	margin: 50px 0 0 70px;
+	font-size: 18px;
+}
+.a3{
+	width: 50px;
+	height: 45px;
+}
+.aa{
+	text-align: center;
+	line-height: 50px;
+}
+body{
+	background-color: bisque;
+}
+

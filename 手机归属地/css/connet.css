@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.connet{
+	width: 500px;
+	height: 500px;
+	/*background-color: bisque;*/
+	margin: 100px auto;
+	border:solid 1px;
+	border-radius: 10px;
+	
+}
+.a1{
+	width: 500px;
+	height: 60px;
+	/*background-color: saddlebrown;*/
+	padding: 40px 0;
+}
+.wd{
+	font-size: 25px;
+	font-family: "微软雅黑";
+	text-align: center;
+	
+}
+.a2{
+	width: 500px;
+	height: 300px;
+	/*background-color: royalblue;*/
+}
+#tel{
+	text-align: center;
+	margin: 50px;
+	width: 400px;
+	height: 50px;
+	font-size: 17px;
+	
+}
+.bu{
+	width: 150px;
+	height: 30px;
+	margin: -40px 100px 0 170px;
+	background-color: green;
+}
+p{
+	text-align: center;
+}
+body{
+	background-color: skyblue;
+}
